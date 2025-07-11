@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAKINGdev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <span style="color: rgb(255, 0, 144); font-size: 0.6rem;">https://:~$</span>
+        TAKING<span style="color: rgb(0, 255, 140); font-size: 1rem;">dev.🐱.io</span>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li class="menu-item"><a href="#">Home</a></li>
+          <li class="menu-item has-dropdown">
+            <a href="#">Projects</a>
+            <ul class="dropdown">
+              <li><a href="#">Front-End 🎨</a></li>
+              <li><a href="#">Back-End 🖥️</a></li>
+              <li><a href="#">Full-Stack 🔄</a></li>
+              <li><a href="#">Mobile Apps 📱</a></li>
+              <li><a href="#">Data Science 📊</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown">
+            <a href="#">Blog</a>
+            <ul class="dropdown">
+              <li><a href="#">Tech News 📰</a></li>
+              <li><a href="#">Tutorials 🎓</a></li>
+              <li><a href="#">Opinions 💬</a></li>
+              <li><a href="#">Reviews ⭐</a></li>
+              <li><a href="#">Interviews 🎤</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown">
+            <a href="#">About</a>
+            <ul class="dropdown">
+              <li><a href="#">My Story 📖</a></li>
+              <li><a href="#">Stack 🧱</a></li>
+              <li><a href="#">Contact 📞</a></li>
+              <li><a href="#">Career 💼</a></li>
+              <li><a href="#">Faq ❓</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown">
+              <li><a href="#">Consulting 🗣️</a></li>
+              <li><a href="#">Web Development</a></li>
+              <li><a href="#">App Development</a></li>
+              <li><a href="#">Seo 🔍</a></li>
+              <li><a href="#">Support 🎧</a></li>
+            </ul>
+          </li>
+          <li class="menu-item has-dropdown">
+            <a href="#">Contact</a>
+            <ul class="dropdown">
+              <li><a href="#">Email 📧</a></li>
+              <li><a href="#">Phone 📱</a></li>
+              <li><a href="#">Office Locations </a></li>
+              <li><a href="#">Support Tickets</a></li>
+              <li><a href="#">Social Media 📱</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    <section class="hero">
+      <div class="chat-background" id="chat"></div>
+      <div class="hero-content">
+        <h1 class="hero-title">TAKING<span>dev</span></h1>
+        <p class="hero-subtitle">where code meets creativity</p>
+      </div>
+    </section>
+
+    <section class="projects-section">
+      <h2 class="section-title"><span style="color: rgb(0, 255, 136);">TAKING@dev:~$</span> Focuses in this web <span style="color: rgb(255, 0, 43);">| less-3D-cube</span></h2>
+        <div class="cube-container">
+          <div class="cube" id="cube">
+          <div class="face front">🚀 Project i</div>
+          <div class="face back">🎮 Project ii</div>
+          <div class="face right">📦 Project iii</div>
+          <div class="face left">🌐 Project iv</div>
+          <div class="face top">📱 Project v</div>
+          <div class="face bottom">🤖 Project vi</div>
+        </div>
+      </div>
+    </section>
+
+    <button id="open-terminal-btn" style="position: fixed; bottom: 20px; right: 20px; z-index: 10000; padding: 10px 15px; font-size: 16px; cursor: pointer;">
+      Open Terminal
+    </button>
+    <div id="terminal-window" class="window" style="display: none; position: fixed; top: 80px; left: 80px; width: 850px; height: 600px; background: linear-gradient(135deg, #0f172a, #0f172a); box-shadow: 0 0 40px rgba(0, 255, 136, 0.229); border-radius: 12px; display: flex; flex-direction: column; font-family: 'JetBrains Mono', monospace; color: rgb(0, 255, 136); user-select: none; z-index: 9999; border: 2px solid #050505; border-radius: 2.1%;">
+      <div class="title-bar" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 15px; background: #ffffff; border-top-left-radius: 12px; border-top-right-radius: 12px; cursor: grab;">
+        <div class="title" style="font-weight: bold; font-family: 'Urbanist', sans-serif; color: black;">TAKING.dev</div>
+          <div class="window-controls" style="display: flex; gap: 8px;">
+            <button class="btn minimize" title="Minimize" style="background: #00ff26; border: none; width: 20px; height: 20px; border-radius: 50%; cursor: pointer;"></button>
+            <button class="btn minimize" title="Maximize" style="background: #ffc107; border: none; width: 20px; height: 20px; border-radius: 50%; cursor: pointer;"></button>
+            <button class="btn close" title="Close" style="background: #ff4d4f; border: none; width: 20px; height: 20px; border-radius: 50%; cursor: pointer;"></button>
+          </div>
+      </div>
+    <div class="terminal-body" style="flex-grow: 1; padding: 15px; overflow-y: auto; display: flex; flex-direction: column;">
+      <div class="output" style="flex-grow: 1; white-space: pre-wrap; line-height: 1.5; font-size: 14px;"></div>
+        <div class="input-line" style="display: flex; align-items: center; margin-top: 8px;">
+          <span style="margin-right: 6px;">TAKING@dev:~$ </span>
+            <input class="cmdline" type="text" autocomplete="off" autofocus style="flex: 1; background: transparent; border: none; outline: none; color: #00c3ff; font-family: inherit; font-size: 14px;" />
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <h2>TAKINGdev</h2>
+          <p>Code. Learn. Share. Repeat.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="#">Projects</a></li>
+              <li><a href="#">Terminal</a></li>
+              <li><a href="#">Docs</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Connect</h4>
+            <ul>
+              <li><a href="#">GitHub</a></li>
+              <li><a href="#">Discord</a></li>
+              <li><a href="#">X (Twitter)</a></li>
+              <li><a href="#">Newsletter</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Stay Updated</h4>
+          <form>
+            <input type="email" placeholder="your@email.com">
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 TAKINGdev DESIGNTEAM. Built with <span>☕</span> and <span>⌨️</span> in the Terminalverse.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
