@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: 'Inter', -apple-system, sans-serif;
+  background-color: #e5ebf1;
+  display: flex;
+  justify-content: center;
+}
+
+.channel {
+  width: 100%;
+  max-width: 480px;
+  background-color: #f9fbfe;
+  min-height: 100vh;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+}
+
+.avatar {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.channel-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.subscribers {
+  font-size: 14px;
+  color: #888;
+  margin-top: 4px;
+}
+
+.messages {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.message {
+  background-color: #ffffff;
+  border-radius: 18px;
+  padding: 14px 18px;
+  max-width: 80%;
+  font-size: 16px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+  align-self: flex-start;
+  animation: fadeIn 0.3s ease;
+}
+
+.time {
+  font-size: 12px;
+  color: #aaa;
+  margin-top: 6px;
+  text-align: right;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+.verified-icon {
+  display: inline-flex;
+  vertical-align: middle;
+  margin-left: 8px;
+  align-items: center;
+}
+.message-image {
+  margin-top: 10px;
+  max-width: 100%;
+  border-radius: 12px;
+  display: block;
+}
